@@ -3,13 +3,13 @@
 
 import Image from "next/image";
 
-import { Icons } from "@/components/icons";
+// import { Icons } from "@/components/icons";
 import {
   Reasoning,
   ReasoningContent,
   ReasoningResponse,
 } from "@/components/ui/reasoning";
-import { AnimatePresence, motion, useInView } from "motion/react";
+import { AnimatePresence, motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 export function ReasoningBasic() {

@@ -6,7 +6,7 @@ import {
   HTMLMotionProps,
   motion,
   Transition,
-} from "motion/react";
+} from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -140,6 +140,7 @@ function InputButtonSubmit({
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.2 }}
         >
+            {/* eslint-disable @typescript-eslint/no-explicit-any */}
           {React.createElement(Icon as React.ComponentType<any>, {
             className: "size-4",
           })}

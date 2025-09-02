@@ -5,7 +5,7 @@ import { ThirdBentoAnimation } from "@/components/third-bento-animation";
 import { FlickeringGrid } from "@/components/ui/flickering-grid";
 import { Globe } from "@/components/ui/globe";
 import { cn } from "@/lib/utils";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 export const Highlight = ({
   children,

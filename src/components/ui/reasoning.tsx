@@ -209,16 +209,16 @@ function ReasoningResponse({
         >
           <div className="flex flex-col items-center justify-center gap-1 mt-2">
             <div className="text-xs text-primary rounded-lg bg-secondary/40 px-2 py-1">
-              Réassigner la tâche 'Déployer en staging' d'Alex à Mike pour
-              équilibrer la charge
+              Réassigner la tâche &apos;Déployer en staging&apos; d&apos;Alex à
+              Mike pour équilibrer la charge
             </div>
             <div className="text-xs text-primary rounded-lg bg-secondary/40 px-2 py-1">
-              Ajouter du temps tampon à 'Tester passerelle de paiement' -
-              étendre la deadline de 2 jours
+              Ajouter du temps tampon à &apos;Tester passerelle de
+              paiement&apos; - étendre la deadline de 2 jours
             </div>
             <div className="text-xs text-primary rounded-lg bg-secondary/40 px-2 py-1">
-              Créer un jalon de contrôle 'Revue pré-lancement' avant la Version
-              Alpha
+              Créer un jalon de contrôle &apos;Revue pré-lancement&apos; avant
+              la Version Alpha
             </div>
           </div>
         </div>

@@ -8,7 +8,13 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { siteConfig } from "@/lib/config";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
-import { AnimatePresence, motion, useScroll } from "motion/react";
+import {
+  AnimatePresence,
+  motion,
+  useScroll,
+  type Variants,
+  type Transition,
+} from "framer-motion";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -22,7 +28,7 @@ const overlayVariants = {
   exit: { opacity: 0 },
 };
 
-const drawerVariants = {
+const drawerVariants: Variants = {
   hidden: { opacity: 0, y: 100 },
   visible: {
     opacity: 1,
@@ -33,12 +39,12 @@ const drawerVariants = {
       damping: 15,
       stiffness: 200,
       staggerChildren: 0.03,
-    },
+    } satisfies Transition,
   },
   exit: {
     opacity: 0,
     y: 100,
-    transition: { duration: 0.1 },
+    transition: { duration: 0.1 } satisfies Transition,
   },
 };
 
