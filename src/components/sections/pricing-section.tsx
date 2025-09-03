@@ -136,10 +136,29 @@ export function PricingSection() {
                   )}
                 </p>
                 <div className="flex items-baseline mt-2">
-                  <PriceDisplay tier={tier} />
-                  <span className="ml-2">
-                    /{billingCycle === "yearly" ? "year" : "month"}
-                  </span>
+                  {tier.name === "Enterprise" ? (
+                    <motion.span
+                      key={1}
+                      className="text-4xl font-semibold"
+                      initial={{
+                        opacity: 0,
+                        x: billingCycle === "yearly" ? -10 : 10,
+                        filter: "blur(5px)",
+                      }}
+                      animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+                      transition={{ duration: 0.25, ease: [0.4, 0, 0.2, 1] }}
+                    >
+                      Custom
+                    </motion.span>
+                  ) : (
+                    <>
+                      <PriceDisplay tier={tier} />
+                      <span className="ml-2">
+                        utilisateur/
+                        {billingCycle === "yearly" ? "year" : "month"}
+                      </span>
+                    </>
+                  )}
                 </div>
                 <p className="text-sm mt-2">{tier.description}</p>
               </div>

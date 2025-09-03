@@ -25,8 +25,8 @@ export function HeroSection() {
           </p> */}
           <InputButtonProvider>
             <InputButton>
-              <InputButtonAction>Join the waitlist</InputButtonAction>
-              <InputButtonSubmit>Join</InputButtonSubmit>
+              <InputButtonAction>Rejoins la waitlist</InputButtonAction>
+              <InputButtonSubmit>Rejoindre</InputButtonSubmit>
             </InputButton>
             <InputButtonInput
               type="email"

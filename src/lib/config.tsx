@@ -49,9 +49,9 @@ export const siteConfig = {
   nav: {
     links: [
       { id: 1, name: "Home", href: "#hero" },
-      { id: 2, name: "How it Works", href: "#bento" },
-      { id: 3, name: "Features", href: "#features" },
-      { id: 4, name: "Pricing", href: "#pricing" },
+      { id: 2, name: "Comment ça fonctionne?", href: "#bento" },
+      { id: 3, name: "Fonctionnalités", href: "#features" },
+      { id: 4, name: "Tarifs", href: "#pricing" },
     ],
   },
   hero: {
@@ -79,7 +79,7 @@ export const siteConfig = {
         href: "#",
       },
       secondary: {
-        text: "Try for free",
+        text: "Essai gratuit",
         href: "#",
       },
     },
@@ -327,16 +327,16 @@ export const siteConfig = {
       {
         id: 1,
         content: <FirstBentoAnimation />,
-        title: "Real-time AI Collaboration",
+        title: "Collaboration IA en temps réel",
         description:
-          "Experience real-time assistance. Ask your AI Agent to coordinate tasks, answer questions, and maintain team alignment.",
+          "Bénéficiez d'une assistance en temps réel. Demandez à votre Agent IA de coordonner les tâches, répondre aux questions et maintenir l'alignement d'équipe.",
       },
       {
         id: 2,
         content: <SecondBentoAnimation />,
-        title: "Seamless Integrations",
+        title: "Intégrations fluides",
         description:
-          "Unite your favorite tools for effortless connectivity. Boost productivity through interconnected workflows.",
+          "Unifiez vos outils préférés pour une connectivité sans effort. Boostez votre productivité grâce à des flux de travail interconnectés.",
       },
       {
         id: 3,
@@ -353,9 +353,9 @@ export const siteConfig = {
       {
         id: 4,
         content: <FourthBentoAnimation once={false} />,
-        title: "Smart Automation",
+        title: "Automatisation intelligente",
         description:
-          "Set it, forget it. Your AI Agent tackles repetitive tasks so you can focus on strategy, innovation, and growth.",
+          "Configure et oublie. Ton Agent IA s'occupe des tâches répétitives pour que tu puisses te concentrer sur la stratégie, l'innovation et la croissance.",
       },
     ],
   },
@@ -382,9 +382,9 @@ export const siteConfig = {
     },
   ],
   growthSection: {
-    title: "Built for Secure Growth",
+    title: "Conçu pour une croissance sécurisée",
     description:
-      "Where advanced security meets seamless scalability—designed to protect your data and empower your growth.",
+      "Où la sécurité avancée rencontre l'évolutivité fluide—conçu pour protéger tes données et favoriser ta croissance.",
     items: [
       {
         id: 1,
@@ -664,9 +664,9 @@ export const siteConfig = {
           </div>
         ),
 
-        title: "Advanced Task Security",
+        title: "Sécurité avancée des tâches",
         description:
-          "Safeguard your tasks with state-of-art encryption and secure access to your workflow data.",
+          "Protégez vos tâches avec un chiffrement de pointe et un accès sécurisé à vos données de flux de travail.",
       },
       {
         id: 2,
@@ -676,9 +676,9 @@ export const siteConfig = {
           </div>
         ),
 
-        title: "Scalable for Teams",
+        title: "Évolutif pour les équipes",
         description:
-          "Grow with your team. Track tasks across multiple workspaces and all team members.",
+          "Grandis avec ton équipe. Suit les tâches à travers plusieurs espaces de travail et tous les membres de l'équipe.",
       },
     ],
   },
@@ -712,8 +712,8 @@ export const siteConfig = {
           "Support par email",
           "2 projets actifs",
         ],
-        description: "Perfect for individual users",
-        buttonText: "Start Free",
+        description: "Parfait pour les utilisateurs individuels qui débutent",
+        buttonText: "Commencer gratuitement",
         buttonColor: "bg-accent text-primary",
         isPopular: false,
       },
@@ -732,8 +732,9 @@ export const siteConfig = {
           "Santé projet avancée",
           "Utilisateurs illimités",
         ],
-        description: "Ideal for professionals and small teams",
-        buttonText: "Upgrade to Pro",
+        description:
+          "Idéal pour les petites équipes et les utilisateurs réguliers",
+        buttonText: "Je me lance",
         buttonColor: "bg-secondary text-white",
         isPopular: true,
       },
@@ -749,9 +750,9 @@ export const siteConfig = {
           "Integrations customisées",
           "Formation dédiée",
         ],
-        description: "Ideal for companies and larger teams",
-        buttonText: "Upgrade to Premium",
-        buttonColor: "bg-secondary text-white",
+        description: "Parfait pour les entreprises et les équipes plus larges",
+        buttonText: "Je me lance",
+        buttonColor: "bg-accent text-primary",
         isPopular: false,
       },
       {
@@ -760,14 +761,8 @@ export const siteConfig = {
         price: "$24",
         period: "month",
         yearlyPrice: "$240",
-        features: [
-          "Custom domain",
-          "SEO-optimizations",
-          "Auto-generated API docs",
-          "Built-in components librarys",
-          "Real-time collaboration tools",
-        ],
-        description: "Best for large teams and enterprise-level organizations",
+        features: ["Incoming"],
+        description: "Contact us for a custom quote",
         buttonText: "Contact Sales",
         buttonColor: "bg-primary text-primary-foreground",
         isPopular: false,
@@ -1021,7 +1016,7 @@ export const siteConfig = {
   },
   ctaSection: {
     id: "cta",
-    title: "Automate. Simplify. Thrive",
+    title: "Automatise. Simplifie. Évolue.",
     backgroundImage: "/agent-cta-background.png",
     button: {
       text: "Start Your 30-Day Free Trial Today",

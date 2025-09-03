@@ -34,8 +34,8 @@ export function CTASection() {
             <div className="absolute bottom-10 flex flex-col items-center justify-center gap-2 w-full">
               <InputButtonProvider>
                 <InputButton>
-                  <InputButtonAction>Join the waitlist</InputButtonAction>
-                  <InputButtonSubmit>Join</InputButtonSubmit>
+                  <InputButtonAction>Rejoins la waitlist</InputButtonAction>
+                  <InputButtonSubmit>Rejoindre</InputButtonSubmit>
                 </InputButton>
                 <InputButtonInput
                   type="email"
