@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import { Icons } from "@/components/icons";
+// import { Icons } from "@/components/icons";
 import { NavMenu } from "@/components/nav-menu";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { siteConfig } from "@/lib/config";
@@ -182,9 +182,14 @@ export function Navbar() {
               <div className="flex flex-col gap-4">
                 <div className="flex items-center justify-between">
                   <Link href="/" className="flex items-center gap-3">
-                    <Icons.logo className="size-7 md:size-10" />
+                    <Image
+                      src="/merlin/Logo Merlin Chapeau Bleu Transparent.png"
+                      width={50}
+                      height={50}
+                      alt="merlin icon"
+                    />
                     <p className="text-lg font-semibold text-primary">
-                      SkyAgent
+                      Merlin
                     </p>
                   </Link>
                   <button
