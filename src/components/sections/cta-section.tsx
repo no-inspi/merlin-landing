@@ -12,11 +12,6 @@ import {
 export function CTASection() {
   const { ctaSection } = siteConfig;
 
-  const handleSubmit = (e: React.FormEvent) => {
-    // Let the form submit naturally to the external URL
-    // You can add any additional logic here if needed
-  };
-
   return (
     <section
       id="cta"
