@@ -219,7 +219,7 @@ export const Feature = ({
             src={currentItem.image}
             alt={currentItem.title}
             className={cn(
-              "aspect-auto h-full w-full rounded-xl border border-neutral-300/50 object-cover p-1",
+              "aspect-auto h-full w-full rounded-xl border border-neutral-300/50 object-contain p-1",
               "transition-all duration-300",
               imageLoaded ? "opacity-100 blur-0" : "opacity-0 blur-xl"
             )}
