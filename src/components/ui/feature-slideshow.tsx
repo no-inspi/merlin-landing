@@ -219,7 +219,7 @@ export const Feature = ({
             src={currentItem.image}
             alt={currentItem.title}
             className={cn(
-              "aspect-auto h-full w-full rounded-xl border border-neutral-300/50 object-contain scale-110 p-1",
+              "aspect-auto h-full w-full rounded-xl border border-neutral-300/50 object-contain p-1",
               "transition-all duration-300",
               imageLoaded ? "opacity-100 blur-0" : "opacity-0 blur-xl"
             )}
@@ -345,7 +345,7 @@ export const Feature = ({
             </Accordion.Root>
           </div>
           <div
-            className={`col-span-5 h-[350px] min-h-[200px] w-auto lg:col-span-3 ${
+            className={`col-span-5 h-[430px] min-h-[200px] w-auto lg:col-span-3 ${
               ltr && "md:order-1"
             }`}
           >
