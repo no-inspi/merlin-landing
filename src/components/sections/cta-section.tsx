@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { siteConfig } from "@/lib/config";
-// import Link from "next/link";
 
 import {
   InputButton,
@@ -12,6 +11,11 @@ import {
 
 export function CTASection() {
   const { ctaSection } = siteConfig;
+
+  const handleSubmit = (e: React.FormEvent) => {
+    // Let the form submit naturally to the external URL
+    // You can add any additional logic here if needed
+  };
 
   return (
     <section
@@ -32,17 +36,26 @@ export function CTASection() {
               {ctaSection.title}
             </h1>
             <div className="absolute bottom-10 flex flex-col items-center justify-center gap-2 w-full">
-              <InputButtonProvider>
-                <InputButton>
-                  <InputButtonAction>Rejoins la waitlist</InputButtonAction>
-                  <InputButtonSubmit>Rejoindre</InputButtonSubmit>
-                </InputButton>
-                <InputButtonInput
-                  type="email"
-                  placeholder="your-email@example.com"
-                />
-              </InputButtonProvider>
-              {/* <span className="text-white text-sm">{ctaSection.subtext}</span> */}
+              <form
+                // onSubmit={handleSubmit}
+                action="https://getlaunchlist.com/s/5GcQpz"
+                method="POST"
+                target="_blank"
+                className="w-full flex flex-col items-center gap-2"
+              >
+                <InputButtonProvider>
+                  <InputButton>
+                    <InputButtonAction>Rejoins la waitlist</InputButtonAction>
+                    <InputButtonSubmit>Rejoindre</InputButtonSubmit>
+                  </InputButton>
+                  <InputButtonInput
+                    type="email"
+                    name="email"
+                    placeholder="your-email@example.com"
+                    required
+                  />
+                </InputButtonProvider>
+              </form>
             </div>
           </div>
         </div>

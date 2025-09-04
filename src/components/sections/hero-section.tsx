@@ -23,16 +23,26 @@ export function HeroSection() {
             {hero.badgeIcon}
             {hero.badge}
           </p> */}
-          <InputButtonProvider>
-            <InputButton>
-              <InputButtonAction>Rejoins la waitlist</InputButtonAction>
-              <InputButtonSubmit>Rejoindre</InputButtonSubmit>
-            </InputButton>
-            <InputButtonInput
-              type="email"
-              placeholder="your-email@example.com"
-            />
-          </InputButtonProvider>
+          <form
+            // onSubmit={handleSubmit}
+            action="https://getlaunchlist.com/s/5GcQpz"
+            method="POST"
+            target="_blank"
+            className="w-full flex flex-col items-center gap-2"
+          >
+            <InputButtonProvider>
+              <InputButton>
+                <InputButtonAction>Rejoins la waitlist</InputButtonAction>
+                <InputButtonSubmit>Rejoindre</InputButtonSubmit>
+              </InputButton>
+              <InputButtonInput
+                type="email"
+                name="email"
+                placeholder="your-email@example.com"
+                required
+              />
+            </InputButtonProvider>
+          </form>
           <div className="flex flex-col items-center justify-center gap-5">
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium tracking-tighter text-balance text-center text-primary">
               {hero.title}
